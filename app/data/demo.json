@@ -1,0 +1,16 @@
+[
+    {
+        "name": "John Smith",
+        "messageList": [
+            {
+                "message" : "Hello How are you",
+                "time" : "2024-03-23T18:25:43.511Z",
+                "destination" : "from"
+            },
+            {
+                "message" : "Hello How are you",
+                "time" : "2024-03-23T18:25:43.511Z"
+            }
+        ]
+    }
+]
