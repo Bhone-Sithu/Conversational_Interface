@@ -129,7 +129,7 @@ function LeftPanel() {
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-wrap">
         <FormControlLabel control={<Checkbox />} label="Unread" />
         <FormControlLabel control={<Checkbox />} label="Unreplied" />
         <FormControlLabel control={<Checkbox />} label="Drafting" />
