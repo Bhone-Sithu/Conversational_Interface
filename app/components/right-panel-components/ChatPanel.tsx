@@ -12,13 +12,12 @@ function ChatPanel({ UserData }: Props) {
   const ChatList: Array<Message> = UserData.messageList;
   let messageIndex = 0;
   return (
-    <div className="p-3 h-2/6 overflow-scroll border-t border-b">
+    <div className=" p-3 h-96 lg:h-3/6 overflow-scroll border-t border-b">
       {ChatList.map((message) =>
         message.destination === "from" ? (
           <div
             key={messageIndex++}
-            className="my-2 flex gap-2 mr-auto "
-            style={{ maxWidth: "50%" }}
+            className="my-2 flex gap-2 mr-auto sm-w-full max-w-xs"
           >
             <Image
               className=" rounded-full h-16 flex-grow-0"
@@ -88,7 +87,7 @@ function ChatPanel({ UserData }: Props) {
                 },
               }}
             >
-              <div className="flex flex-col" style={{ maxWidth: "50%" }}>
+              <div className="flex flex-col max-w-56">
                 <div className=" bg-secondary text-slate-100 p-3">
                   <div className="flex justify-between items-center">
                     {message.sentVia === "LinkedIn" ? (

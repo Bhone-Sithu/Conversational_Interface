@@ -25,7 +25,10 @@ function RightPanel({ UserData }: Props) {
   //   const ChatList: Array<Message> = UserData.messageList;
 
   return (
-    <div className="w-1/2  p-3 bg-white over">
+    <div
+      className="w-full lg:w-1/2  lg:max-h-[65rem]  p-3 bg-white shadow-xl rounded-md"
+      // style={{ maxHeight: "65rem" }}
+    >
       <ChatHeading UserData={UserData} />
       <br />
       <ChatPanel UserData={UserData} />

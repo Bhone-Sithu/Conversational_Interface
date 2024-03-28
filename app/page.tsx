@@ -21,13 +21,13 @@ export default function Home() {
       {/* Container for content */}
       <div className="p-8">
         <div className="my-5">
-          <h1>Inbox</h1>
+          <h1 className="text-xl font-bold">Inbox</h1>
           <p>
-            Total: 128 <span className=" text-orange-300">Unread: 24</span>
+            Total: 128 <span className=" text-orange-300 ml-5">Unread: 24</span>
           </p>
         </div>
         {/* Container for panels */}
-        <div className="flex gap-5">
+        <div className=" flex flex-col lg:flex-row gap-5">
           <LeftPanel />
           <RightPanel UserData={clickedUserData} />
         </div>

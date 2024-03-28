@@ -29,7 +29,7 @@ function LeadStatusChip({ status }: LeadStatusChipProps) {
     <p
       className={` ${getStatusColor(
         status
-      )} bg-green-500 text-xs rounded-full text-white p-2`}
+      )} bg-green-500 text-xs rounded-full text-white p-2 text-center`}
     >
       {status}
     </p>

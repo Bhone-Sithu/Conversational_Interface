@@ -17,6 +17,7 @@ import { LeadStatus } from "../../models/LeadStatusEnum";
 import { useAppSelector, useAppDispatch } from "../../../lib/hook";
 import { openChatDialog } from "@/lib/features/dialogSlice";
 import LeadStatusChip from "../LeadStatusChip";
+import NotiNumber from "../NotiNumber";
 
 interface Props {
   UserData: Array<User>;
@@ -49,7 +50,7 @@ function ChatDataTable({ UserData }: Props) {
         <TableBody>
           {UserData.map((user) => (
             <TableRow
-              className="pointer"
+              className=" cursor-pointer"
               hover
               onClick={(event) => dispatch(openChatDialog(user.id))}
               key={user.id}
@@ -57,13 +58,16 @@ function ChatDataTable({ UserData }: Props) {
               <TableCell component="th" scope="row">
                 <div className="flex items-center">
                   <Checkbox />
-                  <Image
-                    className=" rounded-full w-16"
-                    src={user.receiverImage}
-                    width={200}
-                    height={200}
-                    alt="Receiver Image"
-                  />
+                  <div className="relative">
+                    <Image
+                      className=" rounded-full w-16"
+                      src={user.receiverImage}
+                      width={200}
+                      height={200}
+                      alt="Receiver Image"
+                    />
+                    <NotiNumber count={2} />
+                  </div>
                 </div>
               </TableCell>
               <TableCell>

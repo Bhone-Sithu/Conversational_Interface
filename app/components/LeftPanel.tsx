@@ -65,9 +65,9 @@ function LeftPanel() {
   };
 
   return (
-    <div className="w-1/2 bg-white h-full p-5">
+    <div className="w-full lg:w-1/2 bg-white h-full p-5 shadow-xl rounded-md">
       {/* Filter Section */}
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         <FormControl fullWidth>
           <TextField
             id="outlined-basic"
@@ -82,6 +82,7 @@ function LeftPanel() {
           <Select
             labelId="campaign"
             id="campaign-select"
+            label="Campaign"
             onChange={(e) => campaignFilter(e.target.value + "")}
           >
             <MenuItem value={""} selected>
@@ -116,6 +117,7 @@ function LeftPanel() {
           <Select
             labelId="lead-status"
             id="lead-status-label"
+            label="Lead Status"
             onChange={(e) => leadStatusFilter(e.target.value + "")}
           >
             <MenuItem value={""} selected>
@@ -132,11 +134,11 @@ function LeftPanel() {
       <div className="flex justify-between my-5">
         <p>Selected: 0</p>
         <div className="flex gap-5">
-          <Send />
-          <Autorenew />
-          <Mail />
-          <Drafts />
-          <CreateOutlined />
+          <Send className=" opacity-50" fontSize="small" />
+          <Autorenew className=" opacity-50" fontSize="small" />
+          <Mail className=" opacity-50" fontSize="small" />
+          <Drafts className=" opacity-50" fontSize="small" />
+          <CreateOutlined className=" opacity-50" fontSize="small" />
         </div>
       </div>
 
