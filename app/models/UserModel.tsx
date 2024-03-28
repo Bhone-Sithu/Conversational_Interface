@@ -11,8 +11,10 @@ export default interface User {
   messageList: Array<Message>;
   lastTime: Date;
 }
-interface Message {
+export interface Message {
   message: string;
   time: Date;
+  isAiAssited: Boolean;
+  sentVia: string;
   destination: string;
 }

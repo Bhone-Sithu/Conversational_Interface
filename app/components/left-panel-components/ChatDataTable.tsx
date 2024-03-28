@@ -14,31 +14,22 @@ import { CheckBox, MoreVertOutlined } from "@mui/icons-material";
 import Image from "next/image";
 import User from "../../models/UserModel";
 import { LeadStatus } from "../../models/LeadStatusEnum";
+import { useAppSelector, useAppDispatch } from "../../../lib/hook";
+import { openChatDialog } from "@/lib/features/dialogSlice";
+import LeadStatusChip from "../LeadStatusChip";
 
 interface Props {
   UserData: Array<User>;
 }
 function ChatDataTable({ UserData }: Props) {
-  const getStatusColor = (status: string) => {
-    let color;
-    switch (status) {
-      case LeadStatus.QL:
-        color = "bg-green-500";
-        break;
-      case LeadStatus.I:
-        color = "bg-orange-500";
-        break;
-      case LeadStatus.N:
-        color = "bg-red-500";
-        break;
-      case LeadStatus.R:
-        color = "bg-yellow-500";
-        break;
-      default:
-        break;
-    }
-    return color;
+  const dispatch = useAppDispatch();
+  const chatId = useAppSelector((state) => state.chatDialog.id); // Accessing state managed by your slice
+
+  const handleButtonClick = () => {
+    // Dispatch the action to open the chat dialog with a new ID
+    dispatch(openChatDialog(chatId + 1)); // Pass the new ID as an argument to the action creator
   };
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -57,7 +48,12 @@ function ChatDataTable({ UserData }: Props) {
         </TableHead>
         <TableBody>
           {UserData.map((user) => (
-            <TableRow key={user.id}>
+            <TableRow
+              className="pointer"
+              hover
+              onClick={(event) => dispatch(openChatDialog(user.id))}
+              key={user.id}
+            >
               <TableCell component="th" scope="row">
                 <div className="flex items-center">
                   <Checkbox />
@@ -78,13 +74,7 @@ function ChatDataTable({ UserData }: Props) {
                 </div>
               </TableCell>
               <TableCell align="right">
-                <p
-                  className={` ${getStatusColor(
-                    user.leadStatus
-                  )} bg-green-500 text-xs rounded-full text-white p-2`}
-                >
-                  {user.leadStatus}
-                </p>
+                <LeadStatusChip status={user.leadStatus} />
               </TableCell>
               <TableCell align="right">{user.campaign}</TableCell>
               <TableCell align="right">
