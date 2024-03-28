@@ -23,11 +23,13 @@ I overcame this problem by designing my own json data with user object along wit
 ### Challenge 2 State Management  
 
    As this technical test contain only one page, I underestimated that I did not need to use state management tools and I could do it only by using useState react hook. The moment I realized, I was managing and tossing around User data between components and parents to children and the code became very messy and difficult to debug.  
+  
    As a solution, I put effort in refactoring the code by migrating User data component states to Redux state. By using Redux state management I was able to develop core functionalities like clicking the conversation row from left panel open up their messages and sending messages and retain that messages until the browser is refreshed and it will be reset to initial state data.
 
 ### Challenge 3 Third party components or libraries  
 
    In this project, I relied on many third party components ( Material UI Core , as instructed ) and libraries ( Tailwind CSS ). Due to these tools, I was able to develop and design this conversational interface in a short amount of time. However, there are some obstacles and limitations when it comes to customization.  
+  
    To develop identical to Sales Mind AI theme, I had to manually configure some of their class in the config files, create a theme file that would match the color scheme of Sales Mind. 
 
 ### Conclusion  
