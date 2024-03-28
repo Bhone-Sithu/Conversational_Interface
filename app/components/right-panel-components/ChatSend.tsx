@@ -16,7 +16,6 @@ import ImageIcon from "@mui/icons-material/Image";
 import { useAppDispatch } from "@/lib/hook";
 import User, { Message } from "@/app/models/UserModel";
 import { sendMessage } from "@/lib/features/userDataSlice";
-import { AddCircleOutline } from "@mui/icons-material";
 
 interface Props {
   UserData: User;

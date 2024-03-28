@@ -1,8 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import "react-date-range/dist/styles.css";
-import "react-date-range/dist/theme/default.css";
-import { Calendar, DateRangePicker } from "react-date-range";
 import {
   TextField,
   FormControl,
@@ -29,14 +26,11 @@ import {
 } from "@mui/icons-material";
 
 import importData from "../data/demo";
-import ChatRow from "./left-panel-components/ChatDataTable";
 import ChatDataTable from "./left-panel-components/ChatDataTable";
 
 function LeftPanel() {
-  //   let UserData = importData;
   const [UserData, setStateUserData] = useState(importData);
   const [searchText, setsearchText] = useState("");
-  //   const [stateUserData, setStateUserData] = useState(UserData)
   const leadStatusFilter = (status: string) => {
     let filterUserData = importData.filter(
       (user) => user.leadStatus === status || status === ""
@@ -49,9 +43,6 @@ function LeftPanel() {
     );
     setStateUserData(filterUserData);
   };
-  //   const dateFilter = (date: Date) => {
-  //     console.log(date);
-  //   };
   const textFilter = (text: string) => {
     let searchText = text.toLowerCase();
     let filterUserData = importData.filter(
@@ -108,10 +99,6 @@ function LeftPanel() {
             </MenuItem>
           </Select>
         </FormControl>
-        {/* <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Date</InputLabel>
-          <Calendar date={new Date()} onChange={() => dateFilter} />
-        </FormControl> */}
         <FormControl fullWidth>
           <InputLabel id="lead-status">Lead Status</InputLabel>
           <Select

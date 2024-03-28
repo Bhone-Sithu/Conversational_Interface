@@ -1,5 +1,4 @@
 "use client";
-import NavPanel from "./components/NavPanel";
 import TopNav from "./components/TopNav";
 import LeftPanel from "./components/LeftPanel";
 import RightPanel from "./components/RightPanel";
