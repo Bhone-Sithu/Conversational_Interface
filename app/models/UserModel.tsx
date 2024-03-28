@@ -17,4 +17,6 @@ export interface Message {
   isAiAssited: Boolean;
   sentVia: string;
   destination: string;
+  replyType: string;
+  variant: number;
 }

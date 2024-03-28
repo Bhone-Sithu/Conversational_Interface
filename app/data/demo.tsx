@@ -17,6 +17,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
       {
         message:
@@ -25,6 +27,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
       {
         message:
@@ -33,6 +37,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
       {
         message:
@@ -41,6 +47,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
       {
         message:
@@ -49,6 +57,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
       {
         message:
@@ -57,6 +67,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
     ],
   },
@@ -76,6 +88,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Candy Crusher",
+        variant: 2,
       },
       {
         message: "Hi Jane!",
@@ -83,6 +97,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Candy Crusher",
+        variant: 2,
       },
     ],
   },
@@ -102,6 +118,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Honey Keeper",
+        variant: 3,
       },
       {
         message: "Hi there!",
@@ -109,6 +127,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Honey Keeper",
+        variant: 3,
       },
     ],
   },
@@ -128,6 +148,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Ice Breaker",
+        variant: 2,
       },
       {
         message: "Hi there!",
@@ -135,6 +157,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 2,
       },
     ],
   },
@@ -154,6 +178,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Honey Keeper",
+        variant: 1,
       },
       {
         message: "Hi there!",
@@ -161,6 +187,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Honey Keeper",
+        variant: 1,
       },
     ],
   },
@@ -180,6 +208,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Ice Breaker",
+        variant: 2,
       },
       {
         message: "Hi there!",
@@ -187,6 +217,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 2,
       },
     ],
   },
@@ -207,6 +239,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Ice Breaker",
+        variant: 2,
       },
       {
         message:
@@ -215,6 +249,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
       {
         message:
@@ -223,6 +259,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
       {
         message:
@@ -231,6 +269,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Candy Crusher",
+        variant: 2,
       },
       {
         message:
@@ -239,6 +279,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Candy Crusher",
+        variant: 2,
       },
       {
         message:
@@ -247,6 +289,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Ice Breaker",
+        variant: 1,
       },
     ],
   },
@@ -266,6 +310,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Candy Crusher",
+        variant: 2,
       },
       {
         message: "Hi Jane!",
@@ -273,6 +319,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Candy Crusher",
+        variant: 2,
       },
     ],
   },
@@ -292,6 +340,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Honey Keeper",
+        variant: 3,
       },
       {
         message: "Hi there!",
@@ -299,6 +349,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Honey Keeper",
+        variant: 3,
       },
     ],
   },
@@ -318,6 +370,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Candy Crusher",
+        variant: 3,
       },
       {
         message: "Hi there!",
@@ -325,11 +379,13 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Candy Crusher",
+        variant: 3,
       },
     ],
   },
   {
-    id: 5,
+    id: 11,
     name: "Emily Clark",
     position: "Marketing Specialist",
     campaign: "Marketing Professionals in Chicago",
@@ -344,6 +400,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Honey Keeper",
+        variant: 1,
       },
       {
         message: "Hi there!",
@@ -351,11 +409,13 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Honey Keeper",
+        variant: 1,
       },
     ],
   },
   {
-    id: 11,
+    id: 12,
     name: "David Wilson",
     position: "Project Manager",
     campaign: "Project Managers in Los Angeles",
@@ -370,6 +430,8 @@ const fakeData = [
         sentVia: "LinkedIn",
         isAiAssited: false,
         destination: "from",
+        replyType: "Honey Keeper",
+        variant: 2,
       },
       {
         message: "Hi there!",
@@ -377,6 +439,8 @@ const fakeData = [
         sentVia: "Email",
         isAiAssited: true,
         destination: "to",
+        replyType: "Honey Keeper",
+        variant: 3,
       },
     ],
   },

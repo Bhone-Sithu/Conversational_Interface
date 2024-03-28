@@ -4,11 +4,14 @@ import TopNav from "./components/TopNav";
 import LeftPanel from "./components/LeftPanel";
 import RightPanel from "./components/RightPanel";
 import { useAppSelector, useAppDispatch } from "../lib/hook";
-import importData from "./data/demo";
+// import importData from "./data/demo";
 import User from "./models/UserModel";
 
 export default function Home() {
   const chatDialogId: number = useAppSelector((state) => state.chatDialog.id);
+  const importData: Array<User> = useAppSelector(
+    (state) => state.userData.UserData
+  );
   let clickedUserData = importData.filter(
     (user) => user.id === chatDialogId
   )[0];

@@ -1,9 +1,11 @@
 import { configureStore, PayloadAction } from '@reduxjs/toolkit'
 import ChatDialogReducer  from './features/dialogSlice'
+import UserDataReducer from './features/userDataSlice'
 export const makeStore = () => {
   return configureStore({
     reducer: {
-        chatDialog: ChatDialogReducer
+        chatDialog: ChatDialogReducer,
+        userData: UserDataReducer
     }
   })
 }
