@@ -13,8 +13,30 @@ import { store } from "../lib/store";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Conversational Interface",
-  description: "Created for Sales Mind AI Technical Test",
+  title: {
+    default: "Conversational Interface",
+    template: "%s | Conversational Interface",
+  },
+  description: "This project is developed for a technical test.",
+  openGraph: {
+    title: "Conversational Interface",
+    description: "This project is developed for a technical test.",
+    url: "https://chat.bhonesithu.tech",
+    siteName: "Conversational Interface",
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    shortcut: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
