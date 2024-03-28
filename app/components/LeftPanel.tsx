@@ -56,7 +56,7 @@ function LeftPanel() {
   };
 
   return (
-    <div className="w-full lg:w-1/2 bg-white h-full p-5 shadow-xl rounded-md">
+    <div className="w-full lg:w-1/2 bg-white h-full lg:min-h-[65rem] p-5 shadow-xl rounded-md">
       {/* Filter Section */}
       <div className="flex flex-col sm:flex-row gap-4">
         <FormControl fullWidth>
