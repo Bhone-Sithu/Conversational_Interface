@@ -34,9 +34,22 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  icons: {
-    shortcut: "/favicon.png",
-  },
+  manifest: "/manifest.webmanifest",
+  keywords: [
+    "conversational interface",
+    "chat",
+    "ai",
+    "ai assitance",
+    "conversation",
+  ],
+  viewport:
+    "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
+  generator: "Next.js",
+  icons: [
+    { rel: "apple-touch-icon", url: "icon-images/icon-128x128.png" },
+    { rel: "icon", url: "icon-images/icon-128x128.png" },
+    { rel: "shortcut", url: "favicon.png" },
+  ],
 };
 
 export default function RootLayout({
