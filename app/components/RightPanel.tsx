@@ -22,8 +22,6 @@ interface Props {
 }
 
 function RightPanel({ UserData }: Props) {
-  console.log(UserData);
-
   //   const ChatList: Array<Message> = UserData.messageList;
 
   return (

@@ -10,11 +10,16 @@ interface Props {
 }
 function ChatPanel({ UserData }: Props) {
   const ChatList: Array<Message> = UserData.messageList;
+  let messageIndex = 0;
   return (
     <div className="p-3 h-2/6 overflow-scroll border-t border-b">
       {ChatList.map((message) =>
         message.destination === "from" ? (
-          <div className="my-2 flex gap-2 mr-auto " style={{ maxWidth: "50%" }}>
+          <div
+            key={messageIndex++}
+            className="my-2 flex gap-2 mr-auto "
+            style={{ maxWidth: "50%" }}
+          >
             <Image
               className=" rounded-full h-16 flex-grow-0"
               style={{ width: "70px" }}
@@ -49,7 +54,7 @@ function ChatPanel({ UserData }: Props) {
             </div>
           </div>
         ) : (
-          <div className="my-2 flex gap-2 justify-end ">
+          <div key={messageIndex++} className="my-2 flex gap-2 justify-end ">
             <Image
               className=" rounded-full h-10 flex-grow-0"
               style={{ width: "50px" }}
